@@ -29,6 +29,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    runs-on: ubuntu-latest
+    steps:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
